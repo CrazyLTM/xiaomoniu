@@ -1,3 +1,4 @@
+功能：将实时电脑端数据包内容转为java/lang/String类型并返回给用户
 WinPcap4J使用说明：
 
 使用前先初始化WinPcapDll类（将WinPcap4J.dll复制到jdk目录下的bin文件夹中，在java项目中加入WinPcap4J.jar包）
@@ -11,4 +12,12 @@ WinPcap4J使用说明：
 
 三.loop(int pcapnum, String string, String message)函数：
      返回值为String类型，String为数据包数据（16进制形式）
-         
+     
+     
+     Example：
+         WinPcap4J winPcap4J=new  WinPcap4J();
+	    List<Pacap> list= winPcap4J.findalldevice();
+	    Pacap pacap=list.get(3);
+	    int flag= winPcap4J.BindingAndOpenDevice(pacap.getName());
+         String content=winPcap4J.loop(0, null, null);
+	    
