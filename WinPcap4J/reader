@@ -1,4 +1,6 @@
 WinPcap4J使用说明：
+
+使用前先初始化WinPcapDll类
 一.findalldevice()函数：
      得到计算机的网络设备信息并封装在List<Pcap>集合中返回
 
