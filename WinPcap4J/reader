@@ -1,0 +1,12 @@
+WinPcap4J使用说明：
+一.findalldevice()函数：
+     得到计算机的网络设备信息并封装在List<Pcap>集合中返回
+
+二.BindingAndOpenDevice(String des)通过设备的名或者设备的描述绑定和打开对应的设备
+    ①des字符串为设备的名字或者描述，
+     从第一步中的list集合中得到对应的pcap类，通过pcap类得到对应的属性值
+     pcap.getName();pcap.getDescription();
+
+三.loop(int pcapnum, String string, String message)函数：
+     返回值为String类型，String为数据包数据（16进制形式）
+         
