@@ -1,0 +1,51 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "铭佐视频"
+			}
+		},
+		{
+			"path": "pages/index/me",
+			"style": {
+				"navigationBarTitleText": "视频推荐",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/jiexi",
+			"style": {
+				"navigationBarTitleText": "解析视频"
+			}
+		},
+		{
+			"path": "pages/index/vedio",
+			"style": {
+				"navigationBarTitleText": "视频播放"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "铭佐视频",
+		"navigationBarBackgroundColor": "#ECE9E8",
+		"backgroundColor": "#2c2c2c"
+	},
+	"tabBar": {
+		"color":"#2c2c2c",
+		"selectedColor": "#07C160",//选中的颜色
+		"backgroundColor":"#ECE9E8",
+	    "list": [{
+	      "pagePath": "pages/index/index",
+		  "iconPath": "static/home.png",//默认图标
+		  "selectedIconPath": "static/homeup.png",//选中后的图标
+	      "text": "首页"
+	    }, {
+	      "pagePath": "pages/index/me",
+		  "iconPath": "static/me.png",//默认图标
+		  "selectedIconPath": "static/meup.png",//选中后的图标,
+	      "text": "推荐"
+	    }]
+	  }
+}
